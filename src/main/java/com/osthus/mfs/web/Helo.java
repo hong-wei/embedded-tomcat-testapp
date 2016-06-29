@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//http://localhost:8081/embedded-tomcat-testapp/helo
 @WebServlet(urlPatterns = "/helo",loadOnStartup=1)
 public class Helo extends HttpServlet
 {

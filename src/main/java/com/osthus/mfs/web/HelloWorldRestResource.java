@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 //import de.osthus.ambeth.webservice.AbstractServiceREST;
 
 
-//embedded :http://localhost:9191/foo/api/bar/hello
+//rest :http://localhost:8081/embedded-tomcat-testapp/api/bar/hello
 @Path("/bar")
 public class HelloWorldRestResource // extends AbstractServiceREST
 {
