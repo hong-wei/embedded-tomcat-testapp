@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.osthus.foo</groupId>
 	<artifactId>embedded-tomcat-testapp</artifactId>
@@ -10,21 +11,45 @@
 	</properties>
 
 	<dependencies>
+<!-- 		<dependency> -->
+<!-- 			<groupId>de.osthus.ambeth</groupId> -->
+<!-- 			<artifactId>jambeth-tomcat</artifactId> -->
+<!-- 			<version>${ambeth.version}</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>de.osthus.ambeth</groupId> -->
+<!-- 			<artifactId>jambeth-server-rest</artifactId> -->
+<!-- 			<version>${ambeth.version}</version> -->
+<!-- 		</dependency> -->
 		<dependency>
-			<groupId>de.osthus.ambeth</groupId>
-			<artifactId>jambeth-tomcat</artifactId>
-			<version>${ambeth.version}</version>
+		<groupId>com.sun.jersey</groupId>
+		<artifactId>jersey-servlet</artifactId>
+		<version>1.19.1</version>
 		</dependency>
-		<dependency>
-			<groupId>de.osthus.ambeth</groupId>
-			<artifactId>jambeth-server-rest</artifactId>
-			<version>${ambeth.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-servlet</artifactId>
-			<version>1.19.1</version>
-		</dependency>
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+</dependency>
+
+<!-- 		 https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet --> 
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.containers</groupId> -->
+<!-- 			<artifactId>jersey-container-servlet</artifactId> -->
+<!-- 			<version>2.5.1</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.core</groupId> -->
+<!-- 			<artifactId>jersey-server</artifactId> -->
+<!-- 			<version>2.17</version> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.glassfish.jersey.containers</groupId> -->
+<!-- 			<artifactId>jersey-container-servlet-core</artifactId> -->
+<!-- 			<version>2.17</version> -->
+<!-- 		</dependency> -->
+
 	</dependencies>
 
 	<build>

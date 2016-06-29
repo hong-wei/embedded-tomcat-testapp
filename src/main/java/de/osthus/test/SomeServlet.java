@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+// http://localhost:9191/foo/bar
 @WebServlet(loadOnStartup = 1, urlPatterns = { "/bar" })
 public class SomeServlet extends HttpServlet
 {

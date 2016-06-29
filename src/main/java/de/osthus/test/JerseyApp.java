@@ -6,7 +6,7 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import org.glassfish.jersey.filter.LoggingFilter;
+//import org.glassfish.jersey.filter.LoggingFilter;
 
 import com.osthus.mfs.web.HelloWorldRestResource;
 
@@ -18,7 +18,7 @@ public class JerseyApp extends Application
 	{
 		final Set<Class<?>> classes = new HashSet<Class<?>>();
 		classes.add(HelloWorldRestResource.class);
-		classes.add(LoggingFilter.class);
+//		classes.add(LoggingFilter.class);
 		return classes;
 	}
 }
